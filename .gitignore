@@ -34,6 +34,11 @@ yarn-error.*
 # local env files
 mobile/.env
 backend/.env
+backend/.env*
+backend/.env.local
+backend/.env.development
+backend/.env.test
+backend/.env.production
 .env*.local
 
 # typescript
