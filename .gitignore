@@ -33,6 +33,7 @@ yarn-error.*
 
 # local env files
 mobile/.env
+backend/.env
 .env*.local
 
 # typescript
