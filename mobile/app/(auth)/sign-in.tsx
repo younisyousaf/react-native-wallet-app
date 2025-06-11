@@ -41,6 +41,10 @@ export default function Page() {
 		} catch (err: any) {
 			if (err.errors?.[0]?.code === "form_password_incorrect") {
 				setError("Password is incorrect. Please try again.");
+			} else if (err.errors?.[0].code === "form_identifier_not_found") {
+				setError(
+					"Couldn't find your account. Please double-check your email address."
+				);
 			} else {
 				setError("Something went wrong. Please try again.");
 			}
