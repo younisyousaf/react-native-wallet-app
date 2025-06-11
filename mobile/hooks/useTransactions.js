@@ -15,8 +15,6 @@ import { Alert } from "react-native";
 // Alternatively you can use:
 // https://render.com/
 // deploy your api's here and use the url and it will work on physical devices
-// const API_URL = "http://192.168.1.3:5001/api";
-
 // const API_URL = "http://localhost:5001/api";
 
 export const useTransactions = (userId) => {
