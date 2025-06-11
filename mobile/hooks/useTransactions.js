@@ -1,5 +1,6 @@
 // react custom hook file
 
+import { API_URL } from "@/constants/api";
 import { useCallback, useState } from "react";
 import { Alert } from "react-native";
 
@@ -11,7 +12,12 @@ import { Alert } from "react-native";
 // Example
 // const API_URL = "http://192.138.2.5:5001/api";
 
-const API_URL = "http://localhost:5001/api";
+// Alternatively you can use:
+// https://render.com/
+// deploy your api's here and use the url and it will work on physical devices
+// const API_URL = "http://192.168.1.3:5001/api";
+
+// const API_URL = "http://localhost:5001/api";
 
 export const useTransactions = (userId) => {
 	const [transactions, setTransactions] = useState([]);
